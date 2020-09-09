@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const request = require('request')
-const port = 3000
+const port = 8080
 const bodyParser = require('body-parser')
 
 app.use(express.static(path.join(__dirname, '/public')))
@@ -58,4 +58,4 @@ app.get('/collection', function(req, res) {
   })
 })
 
-app.listen(port, () => console.log(`Listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`Listening at ${port}`))
