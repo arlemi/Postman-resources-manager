@@ -66,6 +66,7 @@ section ul li input {
 
 section ul li input + label:hover {
     cursor:pointer;
+    color: rgb(255, 108, 55);
 }
 
 section ul li input + label {
